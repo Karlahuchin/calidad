@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "5010aab8-39ed-4afb-8da4-74b9757119e7",
+		"name": "API TESTING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dc88c575e59bc00121e0264",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dc88c575e59bc00121e0264"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n \t{\r\n    \"name\": \"Qwe\",\r\n    \"email\": \"34123@sdwe.com\",\r\n    \"age\": 130,\r\n    \"gender\": \"m\"\r\n }\r\n "
+				},
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dcb571eeff2350012ec65b8",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dcb571eeff2350012ec65b8"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
